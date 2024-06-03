@@ -3,7 +3,7 @@ function Spa() {
     <HashRouter>
       <NavBar/>
       <UserContext.Provider value={{users:[{name:'abel',email:'abel@mit.edu',password:'secret',balance:100}]}}>
-        <div className="container" style={{padding: "1vw"}}>
+        <div className="content-padding">
           <Route path="/" exact component={Home} />
           <Route path="/CreateAccount/" component={CreateAccount} />
           <Route path="/login/" component={Login} />

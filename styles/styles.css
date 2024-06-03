@@ -1,11 +1,10 @@
-/* --- INDEX CSS --- */
-
-/* Color Selection */
-::selection {
-    background: #E0AA58;
-    color: #202327;
+.content-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
 }
-::-moz-selection {
-    background: #E0AA58;
-    color: #202327;
+
+.nav-padding {
+    padding-left: 40px;
+    padding-right: 40px;
 }
