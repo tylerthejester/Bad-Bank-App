@@ -1,0 +1,11 @@
+/* --- INDEX CSS --- */
+
+/* Color Selection */
+::selection {
+    background: #E0AA58;
+    color: #202327;
+}
+::-moz-selection {
+    background: #E0AA58;
+    color: #202327;
+}
