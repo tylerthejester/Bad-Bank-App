@@ -21,13 +21,8 @@ function Deposit(){
       setTimeout(() => setStatus(""), 3000);
       return false;
     }
-    if (amount < 0) {
-      setStatus("Amount has to be > 0");
-      setTimeout(() => setStatus(""), 3000);
-      return false;
-    }
-    if (amount == 0) {
-      setStatus("Amount has to be > 0");
+    if (amount <= 0) {
+      setStatus("Can't deposit zeros or negative numbers");
       setTimeout(() => setStatus(""), 3000);
       return false;
     } else {
@@ -61,13 +56,13 @@ function Deposit(){
           <>
             <div style={{marginTop: "20px"}}></div>
             Deposit
-            <input type="input" className="form-control" placeholder="Enter Amount" onChange={handleChange}/>
+            <input type="input" className="form-control" placeholder="Enter amount" onChange={handleChange}/>
             <div style={{marginTop: "20px"}}></div>
             <button type="submit" className="btn gold-button w-100" disabled={isDisabled} onClick={handleSubmit}>Submit</button>
           </>
         ) : (
           <>
-            <h5>Deposit Accepted</h5>
+            <h6>Deposit Succeeded</h6>
             <button type="submit" className="btn gold-button w-100" onClick={clearForm}>Make another deposit</button>
           </>
         )

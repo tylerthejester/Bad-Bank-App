@@ -71,6 +71,7 @@ function CreateAccount(){
         ) : (
           <>
             <h5>Success</h5>
+            <p>Welcome to BadBank, {name}!</p>
             <div style={{marginTop: "10px"}}></div>
             <button type="submit" className="btn gold-button w-100" onClick={clearForm}>Add another account</button>
           </>
