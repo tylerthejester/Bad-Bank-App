@@ -44,7 +44,7 @@ function Withdraw(){
     return;
   };
 
-  // Clear to make another deposit
+  // Clear to make another withdrawal
   function clearForm() {
     setShow(true);
     setIsDisabled(true);
