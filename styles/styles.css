@@ -8,3 +8,16 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+
+/* Gold button */
+.gold-button {
+    background-color: #FED67F;
+    color: #111111;
+}
+
+/* Status style for error messages */
+.status-error {
+    margin-top: 20px;
+    background-color: #4B3137;
+    color: #FF9494;
+}
