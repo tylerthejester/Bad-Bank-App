@@ -9,6 +9,11 @@
     padding-right: 40px;
 }
 
+/* Image on the Home Page */
+.img-fluid {
+    max-width: 20rem;
+}
+
 /* Gold button */
 .gold-button {
     background-color: #FED67F;

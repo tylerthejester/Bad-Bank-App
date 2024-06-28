@@ -23,6 +23,11 @@ function CreateAccount(){
       setTimeout(() => setStatus(""), 3000);
       return false;
     }
+    if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+      setStatus("Invalid email format");
+      setTimeout(() => setStatus(""), 3000);
+      return false;
+    }
     if (password.length < 8) {
       setStatus("At least 8 characters required for password");
       setTimeout(() => setStatus(""), 3000);
@@ -57,13 +62,16 @@ function CreateAccount(){
         show ? (
           <>
             Name
+            <div style={{marginTop: "4px"}}></div>
             <input type="name" className="form-control" id="name" placeholder="John Doe" value={name}onChange={(e) => setName(e.currentTarget.value)}
             />
             <div style={{marginTop: "20px"}}></div>
             Email address
+            <div style={{marginTop: "4px"}}></div>
             <input type="input" className="form-control" id="email" placeholder="johndoe123@gmail.com" value={email} onChange={(e) => setEmail(e.currentTarget.value)}/>
             <div style={{marginTop: "20px"}}></div>
             Password
+            <div style={{marginTop: "4px"}}></div>
             <input type="password" className="form-control" id="password" placeholder="8+ characters here" value={password} onChange={(e) => setPassword(e.currentTarget.value)}/>
             <div style={{marginTop: "30px"}}></div>
             <button type="submit" className="btn gold-button w-100" disabled={!activateButton()} onClick={handleSubmit}>Submit</button>

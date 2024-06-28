@@ -62,7 +62,7 @@ function Withdraw(){
           <>
             <div style={{marginTop: "20px"}}></div>
             Withdraw
-            <div style={{marginTop: "8px"}}></div>
+            <div style={{marginTop: "4px"}}></div>
             <input type="input" className="form-control" placeholder="Enter amount" onChange={handleChange}/>
             <div style={{marginTop: "20px"}}></div>
             <button type="submit" className="btn gold-button w-100" disabled={isDisabled} onClick={handleSubmit}>Submit</button>
