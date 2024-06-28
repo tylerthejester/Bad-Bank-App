@@ -15,8 +15,8 @@ function Card(props){
         <div className={classes()} style={{width: "20rem"}}>
           <div className="card-header">{props.header}</div>
           <div className="card-body">
-            {props.title && (<h5 className="card-title">{props.title}</h5>)}
-            {props.text && (<p className="card-text">{props.text}</p>)}
+            {props.title && (<h5>{props.title}</h5>)}
+            {props.text && (<p>{props.text}</p>)}
             {props.balance && (<h3>Balance: ${props.balance}</h3>)}
             {props.body}
             {props.status && (<div className="status-error" id="createStatus">{props.status}</div>)}

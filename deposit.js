@@ -56,6 +56,7 @@ function Deposit(){
           <>
             <div style={{marginTop: "20px"}}></div>
             Deposit
+            <div style={{marginTop: "8px"}}></div>
             <input type="input" className="form-control" placeholder="Enter amount" onChange={handleChange}/>
             <div style={{marginTop: "20px"}}></div>
             <button type="submit" className="btn gold-button w-100" disabled={isDisabled} onClick={handleSubmit}>Submit</button>
