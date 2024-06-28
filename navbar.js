@@ -21,7 +21,7 @@ function NavBar(){
             <a className="nav-link" href="#/withdraw/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Withdraw from an account">Withdraw</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/alldata/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="All user data">AllData</a>
+            <a className="nav-link" href="#/alldata/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="All user data">All Data</a>
           </li>          
         </ul>
       </div>
